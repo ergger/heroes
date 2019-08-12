@@ -1,0 +1,16 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\src",
+    "\\src\\app",
+    "\\src\\app\\components",
+    "\\src\\app\\components\\find-hero",
+    "\\src\\app\\components\\hero",
+    "\\src\\app\\components\\hero-card",
+    "\\src\\app\\components\\heroes",
+    "\\src\\app\\components\\shared",
+    "\\src\\app\\components\\shared\\navbar"
+  ],
+  "SelectedNode": "\\src\\app\\components\\find-hero\\find-hero.component.html",
+  "PreviewInSolutionExplorer": false
+}

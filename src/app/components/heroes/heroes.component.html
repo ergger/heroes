@@ -1,0 +1,6 @@
+<h1>Héroes <small>listado disponible</small></h1>
+<hr />
+<div class="card-columns">
+  <!--*ngFor="let heroe of heroes; let i = index "-->
+  <app-hero-card (selectionHero)="getHeroe( $event )" [heroe] ="hero" [index]="i" *ngFor="let hero of heroes; let i = index "></app-hero-card>
+</div>

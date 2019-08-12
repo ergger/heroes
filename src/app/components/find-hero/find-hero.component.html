@@ -1,0 +1,22 @@
+<h1>Héroes <small>listado hallado: {{_consulta}}</small></h1>
+<hr />
+<div class="row" *ngIf="_heroes.length == 0">
+  <div class="col-md-12">
+    <div class="alert alert-info" role="alert">
+      No se encontro heroe &rarr;{{_consulta}}&larr;
+    </div>
+  </div>
+</div>
+<div class="card-columns">
+  <app-hero-card [heroe]="hero" [index]="hero.idx" *ngFor="let hero of _heroes; let i = index "></app-hero-card>
+  <!--div class="card animated fadeIn fast" *ngFor="let hero of _heroes; let i = index ">
+    <img [src]="hero.img" class="card-img-top" [alt]="hero.nombre">
+    <div class="card-body">
+      <h5 class="card-title">{{ hero.nombre }}</h5>
+      <p class="card-text">{{ hero.bio }}</p>
+      <p class="card-text"><small class="text-muted">{{ hero.aparicion }}</small></p>
+      <button (click)="getHeroe(i)" class="btn btn-outline-primary btn-block" type="button">Ver</button>
+      <a [routerLink]="['/heroe', i]" class="btn btn-outline-primary btn-block">Mostrar</a>
+    </div>
+  </div-->
+</div>
